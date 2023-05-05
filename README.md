@@ -1,27 +1,18 @@
 # AngularBlock0
+## Step to run local blockchain and using code to interact with smart contract
+### 1. Download Ganache
+Ganache is local blockchain enviroment using for development, has 2 version, 1 is cli only and other is cli + ui
+Download cli + ui version in [Ganache](https://trufflesuite.com/ganache/), install and run it
+### 2. Download Metamask extensions for browser
+Go to browser, get Metamask for browser in (https://metamask.io/download/)
+### 3. Connect metamask to Ganache local block chain server
+See the video
+### 4. Download node package version of truffle
+Run `npm install -g truffle`
+### 5. Compile smart contract and deploy to Ganache
+Navigate to source code root folder
+Run `truffle migrate`
+Get transaction address of smart contract and replace in app/service/ticket.service.ts `this.contract = new this.web3.eth.Contract(this.abi, 'replace here');`
+### 6. Run application 
+Run application with `ng serve` and start testing an interact with smart contract with simple UI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
