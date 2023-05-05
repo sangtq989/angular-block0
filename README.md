@@ -7,6 +7,7 @@ Download cli + ui version in [Ganache](https://trufflesuite.com/ganache/), insta
 Go to browser, get Metamask for browser in (https://metamask.io/download/)
 ### 3. Connect metamask to Ganache local block chain server
 See the video
+https://user-images.githubusercontent.com/51328931/236464572-e0361789-953b-48a0-9a48-52b982a189c1.mp4
 ### 4. Download node package version of truffle
 Run `npm install -g truffle`
 ### 5. Compile smart contract and deploy to Ganache
